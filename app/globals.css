@@ -18,14 +18,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
-
+h1 {
+  /* color: #765566; */
+  @apply text-amber-700;
+  @apply text-3xl;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
